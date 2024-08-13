@@ -10,7 +10,6 @@ def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
 
-
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -22,14 +21,13 @@ def get_filters():
     city = ''
     while city not in cities:
         city = input('Input city (chicago, new york city, washington): ').lower()
-
     # get user input for month (all, january, february, ... , june)
     months = ['all','january', 'february', 'march', 'april', 'may', 'june']
     month = input('Input month: ').lower()
     while month not in months:
         month = input('Input month: ').lower()
-        
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+       
+    #get user input for day of week (all, monday, tuesday, ... sunday)
     days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     day = input('Input day of week: ').lower()
     while day not in days:
